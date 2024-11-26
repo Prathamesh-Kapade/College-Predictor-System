@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConsultantName</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="static/home.css">
+</head>
+<body>
+
+    <header>
+        <div class="navbar-container">
+            <div class="navbar-left">
+                <a class="navbar-brand" href="#home">
+                    <img src="https://th.bing.com/th/id/OIP.03JzQpcFTF1ZcPYIq7N17gHaHa?pid=ImgDet&rs=1" alt="Logo"
+                        width="50" height="50" />
+                </a>
+                <h1 id="cps">Consultant Name</h1>
+            </div>
+            
+            <div class="navbar-right">
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="about/">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#form">Prediction Form</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    
+        </div>
+    </header>
+    </div>
+
+
+    <div class="carousel-inner"> 
+        <div class="carousel-item active">
+            <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/MIT-WPU-1.tif/lossless-page1-1200px-MIT-WPU-1.tif.png" />
+            <div class="carousel-caption"> 
+                    <h4>Welcome To Our Consultant</h4>
+                <p>Choose your dream  college, enhance your skills and achieve your goals</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="static/clg2.webp" alt="Image 2" />
+            <div class="carousel-caption">
+                    <h4>Welcome To  Our Consultant</h4>
+                <p>Choose your dream college, enhance your skills and achieve your goals</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="static/clg3.webp" alt="Image 3" />
+            <div class="carousel-caption">
+                     <h4>Welcome To Our Consultant</h4>
+                <p>Choose your dream college, enhance your skills and achieve your goals</p>
+            </div>
+        </div>
+    </div>
+
+    <section id="services">
+        <h1>OUR SERVICES</h1>
+        <div class="services-container">
+            
+            <div class="service-box" style="background-color: #8e44ad;">
+                <img src="https://img.icons8.com/ios/50/000000/graduation-cap.png"
+                    alt="College Admissions Committee Review" class="service-icon">
+                <h2>College Admissions Committee Review</h2>
+                <p class="service-summary">We provide expert feedback on your application to help you stand out in front
+                    of the admissions committee.</p>
+                <button class="read-more" onclick="toggleDetails('service1-details')">Read More</button>
+                <div id="service1-details" class="service-details" style="display: none;">
+                    <p>Our team of experts will review your application and provide detailed feedback on how you can
+                        improve your chances of being accepted into your dream college. This includes a thorough
+                        assessment of your essays, recommendation letters, and overall application strategy.</p>
+                </div>
+            </div>
+
+            <div class="service-box" style="background-color: #3498db;">
+                <img src="https://img.icons8.com/ios/50/000000/counselor.png" alt="College Admissions Counseling"
+                    class="service-icon">
+                <h2>College Admissions Counseling</h2>
+                <p class="service-summary">Receive personalized guidance to help you navigate the complex college
+                    admissions process.</p>
+                <button class="read-more" onclick="toggleDetails('service2-details')">Read More</button>
+                <div id="service2-details" class="service-details" style="display: none;">
+                    <p>Our counselors provide one-on-one sessions to guide you through every step of the college
+                        application process. From selecting the right schools to filling out applications and preparing
+                        for interviews, we’re here to help every step of the way.</p>
+                </div>
+            </div>
+
+            <div class="service-box" style="background-color: #2ecc71;">
+                <img src="https://img.icons8.com/ios/50/000000/pencil.png" alt="Essay Editing" class="service-icon">
+                <h2>Essay Editing</h2>
+                <p class="service-summary">Perfect your essays with the help of professional editors to make sure your
+                    story is told clearly and compellingly.</p>
+                <button class="read-more" onclick="toggleDetails('service3-details')">Read More</button>
+                <div id="service3-details" class="service-details" style="display: none;">
+                    <p>Our expert editors will work with you to refine your college essays, ensuring they are clear,
+                        concise, and impactful. We focus on improving your narrative, grammar, and overall tone, helping
+                        you craft an essay that stands out from the competition.</p>
+                </div>
+            </div>
+
+
+            <div class="service-box" style="background-color: #e67e22;">
+                <img src="https://img.icons8.com/ios/50/000000/financial-planning.png"
+                    alt="Financial Planning Assistance" class="service-icon">
+                <h2>Financial Planning Assistance</h2>
+                <p class="service-summary">Get help planning your finances for college, including scholarships, grants,
+                    and loans.</p>
+                <button class="read-more" onclick="toggleDetails('service4-details')">Read More</button>
+                <div id="service4-details" class="service-details" style="display: none;">
+                    <p>We help you understand the financial aid process, from completing the FAFSA to exploring
+                        scholarship opportunities. Our team will guide you through the complexities of student loans and
+                        help you find the best financial aid options available to you.</p>
+                </div>
+            </div>
+
+    
+            <div class="service-box" style="background-color: #f39c12;">
+                <img src="https://img.icons8.com/ios/50/000000/lightbulb.png"
+                    alt="Research Scholar Program, AI Scholar Program and Startup Internship Opportunities"
+                    class="service-icon">
+                <h2>Research Scholar Program, AI Scholar Program, and Startup Internship Opportunities</h2>
+                <button class="read-more" onclick="toggleDetails('service5-details')">Read More</button>
+                <div id="service5-details" class="service-details" style="display: none;">
+                    <p>Gain hands-on experience through our Research Scholar Program, where you can contribute to
+                        cutting-edge projects. Our AI Scholar Program provides exposure to the world of artificial
+                        intelligence, while our Startup Internship Opportunities allow you to work with exciting
+                        startups and develop your entrepreneurial skills.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <h1>Testimonials</h1>
+        <div class="testimonial-container">
+            <div class="testimonial">
+                <img src="https://via.placeholder.com/100" alt="Client 1" class="testimonial-photo">
+                <p class="testimonial-text">"This service helped me get into my dream college! Highly recommend!"</p>
+                <p class="client-name">- Prathamesh Patil</p>
+            </div>
+            <div class="testimonial">
+                <img src="https://via.placeholder.com/100" alt="Client 2" class="testimonial-photo">
+                <p class="testimonial-text">"Amazing guidance and support throughout the process!"</p>
+                <p class="client-name">- Prathamesh Kapade</p>
+            </div>
+            <div class="testimonial">
+                <img src="https://via.placeholder.com/100" alt="Client 3" class="testimonial-photo">
+                <p class="testimonial-text">"I received personalized advice that made all the difference!"</p>
+                <p class="client-name">- Pranali More</p>
+            </div>
+            <div class="testimonial">
+                <img src="https://via.placeholder.com/100" alt="Client 4" class="testimonial-photo">
+                <p class="testimonial-text">"The best decision I made for my college journey!"</p>
+                <p class="client-name">- Priti Chavan</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <h1>College Prediction Form</h1>
+        <form action="{% url 'result' %}" method="POST">
+
+            {% csrf_token %}
+
+            <div class="form-group">
+                <label for="name">Enter your name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="category">Select your Category:</label>
+                <select id="category" name="category" required>
+                    <option value="General">General</option>
+                    <option value="OBC">OBC</option>
+                    <option value="SC">SC</option>
+                    <option value="ST">ST</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="branch">Choose Branch:</label>
+                <select id="branch" name="branch" required>
+                    <option value="Computer Science">Computer Science</option>
+                    <option value="Mechanical Engineering">Mechanical Engineering</option>
+                    <option value="Electrical Engineering">Electrical Engineering</option>
+                    <option value="Civil Engineering">Civil Engineering</option>
+                </select>
+            </div>
+   
+
+            <div class="form-group">
+                <label for="branch">CAP Round:</label>
+                <select id="branch" name="branch" required>
+                    <option value="1">Round 1</option>
+                    <option value="2">Round 2</option>
+                    <option value="3">Round 3</option>
+                </select>
+            </div>
+
+
+            <div class="form-group">
+                <label for="cet_score">Enter Your CET Score:</label>
+                <input type="number" id="cet_score" name="cet_score" required>
+            </div>
+
+            <div class="form-group">
+                <label for="rank">Enter Your Rank:</label>
+                <input type="number" id="rank" name="rank" required>
+            </div>
+
+            <div class="form-group">
+                <label for="subscribe">Would You Like Our Website?</label>
+                <select id="subscribe" name="subscribe" required>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+            <button id="btn" value="submit">Predict</button>
+        </form>
+    </div>
+
+    <footer>
+        <div class="fot">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Learn more about our services and how we can help you achieve your goals.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@example.com</p>
+                <p>Phone: +1 234 567 890</p>
+            </div>
+            <div class="footer-section social-media">
+                <h3>Follow Us</h3>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <p id="copy">&copy; Consultant Name. All Rights Reserved.</p>
+    </footer>
+
+    <script src="static/script.js"></script>
+</body>
+
+</html>

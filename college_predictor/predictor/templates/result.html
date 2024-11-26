@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Prediction Result</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .card {
+            margin-top: 20px;
+        }
+        .result-title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .result-value {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+        .college-list {
+            margin-top: 20px;
+        }
+        .college-item {
+            font-size: 18px;
+            padding: 5px 0;
+        }
+        .probability {
+            font-size: 16px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">College Prediction Result</h1>
+
+        <div class="card">
+            <div class="card-header">
+                <h3 class="result-title">Hello, {{ name }}!</h3>
+            </div>
+            <div class="card-body">
+                <p class="result-value">Based on your selected category and details, we predict the following colleges for you:</p>
+
+                <div class="college-list">
+                    {% for college, probability in predicted_colleges %}
+                        <div class="college-item">
+                            <strong>{{ college }}</strong>
+                            <div class="probability">
+                                Predicted Probability: {{ probability|floatformat:2 }}
+                            </div>
+                        </div>
+                    {% empty %}
+                        <p>No predictions available.</p>
+                    {% endfor %}
+                </div>
+
+                <p class="mt-3">We hope this information helps you with your college decision! Good luck!</p>
+
+                <a href="{% url 'home' %}" class="btn btn-primary">Go Back to Home</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
